@@ -39,24 +39,12 @@ This API allows you to manage a library system where users can borrow and return
 
    ```bash
     touch .env
-    touch .env.local
    ```
 
-4. Example .env file:
+4. Example .env file (This is needed to run app on Docker Environment.):
 
    ```bash
     DB_HOST=db
-    DB_PORT=5432
-    DB_NAME=library_db
-    DB_USER=library_user
-    DB_PASSWORD=library_pass
-
-   ```
-
-5. Example .env.local file:
-
-   ```bash
-    DB_HOST=localhost
     DB_PORT=5432
     DB_NAME=library_db
     DB_USER=library_user
