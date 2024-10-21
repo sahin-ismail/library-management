@@ -1,9 +1,6 @@
-FROM node:20.18
+FROM node:14
 
 WORKDIR /usr/src/app
-
-# Install ts-node globally
-RUN npm install -g ts-node
 
 # Install dependencies
 COPY package*.json ./
