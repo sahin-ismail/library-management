@@ -41,7 +41,7 @@ This API allows you to manage a library system where users can borrow and return
     touch .env
    ```
 
-4. Example .env file (This is needed to run app on Docker Environment.):
+4. If you will run on Docker environment .env should be same with below. If you want to run locally, you should configure .env file according to database and run init-db.sql script:
 
    ```bash
     DB_HOST=db
@@ -54,21 +54,21 @@ This API allows you to manage a library system where users can borrow and return
 
 ## Running the Application
 
+### Docker Environment
+
+If you prefer to run the app on docker environment, run following command. ( Do not need to cofigure anything, just start and send requests )
+
+```bash
+ docker-compose up --build -d
+
+```
+
 ### Local Environment
 
 If you prefer to run the app locally using ts-node
 
 ```bash
  npm run local
-
-```
-
-### Docker Environment
-
-If you prefer to run the app on docker environment, run following command.
-
-```bash
- docker-compose up --build -d
 
 ```
 
